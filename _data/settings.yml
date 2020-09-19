@@ -10,10 +10,10 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'About'
-      url: '/about'
     - title: 'Latest'
       url: '/'
+    - title: 'About'
+      url: '/about'
     - title: 'Projects'
       url: '/projects/'
     - title: 'Contact'
@@ -52,7 +52,7 @@ social_settings:
   etsy_url: ''
   kickstarter_url: ''
   soundcloud_url: ''
-  spotify_url: ''
+  spotify_url: 'https://open.spotify.com/user/ebk8qa6nntgtlrp88z2a7hj5t?si=LG3l04FFQqiqUuF8WniNyQ'
   bandcamp_url: ''
   linkedin_url: ''
 
