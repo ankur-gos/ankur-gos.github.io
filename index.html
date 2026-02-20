@@ -1,55 +1,32 @@
 ---
 layout: default
-title: Ankur Goswami
-description: 
+title: Ankur Guoswami
+description:
 featured_image: /images/social.jpg
 ---
 
-<section class="listing single">
+<section class="single">
 
 	<div class="wrap">
 
-		{% for post in paginator.posts %}
+		<article class="single-post">
 
-		<article class="listing-post">
+			<div class="single-post__content">
+				<p>I'm a senior machine learning engineer at Apple, where I currently focus on LLM finetuning to help everyday users complete tasks.</p>
 
-			<div class="listing-post__header">
-				<h2 class="listing-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-				<p class="listing-post__subtitle">{{ post.date | date_to_long_string }}</p>
-			</div>
+				<p>Before Apple, I was a graduate student at the University of Wisconsin-Madison, where I built <a href="https://cosmos.wisc.edu/">COSMOS</a>, an ML-powered semantic search engine over scientific documents. My advisor was <a href="http://pages.cs.wisc.edu/~thodrek/">Theodoros Rekatsinas</a>.</p>
 
-			{% if post.featured_image %}
-			<a href="{{ post.url | relative_url }}" class="listing-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
-			{% endif %}
+				<p>Outside of work, I enjoy being outside and playing sports, especially volleyball and tennis.</p>
 
-			<div class="listing-post__content">
-				<p>{{ post.excerpt }}</p>
-				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a>
+				<h3>Contact</h3>
+				<p>
+					<a href="mailto:ankur.goswami12@gmail.com">ankur.goswami12@gmail.com</a><br>
+					+1-707-591-3405
+				</p>
 			</div>
 
 		</article>
 
-		{% endfor %}
-
 	</div>
 
 </section>
-
-{% if paginator.total_pages > 1 %}
-
-<section class="pagination">
-
-	{% if paginator.previous_page %}
-	<div class="pagination__prev">
-		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
-	</div>
-	{% endif %}
-	{% if paginator.next_page %}
-	<div class="pagination__next">
-		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--large"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-	</div>
-	{% endif %}
-
-</section>
-
-{% endif %}

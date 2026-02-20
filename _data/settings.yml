@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Ankur Goswami
+  site_title: Ankur Guoswami
   site_tagline: Machine Learning Engineer at Apple
   favicon_image: /images/favicon.png
 
@@ -9,15 +9,7 @@ header_settings:
   logo_width: 200
 
 menu_settings:
-  menu_items:
-    - title: 'Latest'
-      url: '/'
-    - title: 'About'
-      url: '/about'
-    - title: 'Projects'
-      url: '/projects/'
-    - title: 'Contact'
-      url: '/contact'
+  menu_items: []
 
 grid_settings:
   grid_spacing: 10
